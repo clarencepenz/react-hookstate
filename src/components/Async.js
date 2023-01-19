@@ -36,8 +36,14 @@ const Async = () => {
       minH="100vh"
       m="auto"
     >
-      <Box width="700px" minH="100vh" mt="0rem" bg="blackAlpha.400" p={8}>
-         <Text fontSize="28px" fontWeight="600" mb={4}>
+      <Box
+        width={{ base: "auto", md: "700px" }}
+        minH="100vh"
+        mt="0rem"
+        bg={{ base: "transparent", md: "blackAlpha.400" }}
+        p={8}
+      >
+        <Text fontSize="28px" fontWeight="600" mb={4}>
           User Count: {user.length}
         </Text>
         <Box my={8}>
@@ -64,7 +70,11 @@ const Async = () => {
 
                 <Stack w="full">
                   <CardBody>
-                    <Text fontSize="24px" fontWeight="600" py="2">
+                    <Text
+                      fontSize="24px"
+                      fontWeight="600"
+                      py="2"
+                    >
                       {item.value.name}
                     </Text>
                   </CardBody>

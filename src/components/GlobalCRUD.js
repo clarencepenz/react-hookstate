@@ -63,7 +63,13 @@ const GlobalCRUD = () => {
       minH="100vh"
       m="auto"
     >
-      <Box width="700px" minH="100vh" mt="0rem" bg="blackAlpha.400" p={8}>
+      <Box
+        width={{ base: "auto", md: "700px" }}
+        minH="100vh"
+        mt="0rem"
+        bg={{ base: "transparent", md: "blackAlpha.400" }}
+        p={8}
+      >
         <Text fontSize="28px" fontWeight="600" mb={4}>
           Blog posts: {state.getCountBlog()}
         </Text>
